@@ -1,6 +1,6 @@
 import { MigrationInterface, QueryRunner, TableColumn, TableForeignKey } from "typeorm"
 
-export class AddEmployeForeignKeyToPosition1675862057786 implements MigrationInterface {
+export class AddEmployeForeignKeyToPositionb1675862057786 implements MigrationInterface {
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     
