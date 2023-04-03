@@ -15,7 +15,9 @@ const app = express();
 const server = async () => {
   try {
 
-      app.use(cors());
+      // app.use(cors());
+      app.use(cors({origin: '*'}));
+    
       app.use(express.json());
       app.use(routes)
 
@@ -36,7 +38,7 @@ const server = async () => {
       app.get("/", (request, response) => {
         return response.json({message: "hello world"})
       })
-      
+
       await AppDataSource.initialize();
       console.log("database initialize")
 
